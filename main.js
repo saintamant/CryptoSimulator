@@ -53,5 +53,5 @@ function calcular(){
   let cuenta = valor_aproximado(cripto_encontrada, cripto_info.cantidad, cripto_info.plazo);
   cambiar_text_ganancias(cuenta, cripto_encontrada.value);
   cambiar_text_apy(cripto_encontrada.APY)
-  return cuenta;
+  return cuenta; //a
 }
