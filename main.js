@@ -55,3 +55,7 @@ function calcular(){
   cambiar_text_apy(cripto_encontrada.APY)
   return cuenta; //a
 }
+
+
+/* aaaaaaaaa */
+

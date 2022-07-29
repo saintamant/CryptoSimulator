@@ -14,87 +14,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
 </head>
-<body>
-    
-
+<body onload="calcular()">
 <header>
   <nav id="menu">
     <div> <img src="imagenes/Logo Productos Tecnológicos Simple Negro.png" alt="" class="img_logo"></div>
     <div class="menu-item">
         <div class="menu-text">
-            <a href="#">Cripto</a>
-        </div>
-        <div class="sub-menu">
-            <div class="icon-box">
-                <div class="icon"><i class="fal fa-wind-turbine"></i></div>
-                <div class="text">
-                    <div class="title">Turbo Editor <i class="far fa-arrow-right"></i></div>
-                    <div class="sub-text">Edit your code while slowing down time.</div>
-                </div>
-            </div>
-            <div class="icon-box">
-                <div class="icon"><i class="fal fa-lightbulb-on"></i></div>
-                <div class="text">
-                    <div class="title">Idea Creator <i class="far fa-arrow-right"></i></div>
-                    <div class="sub-text">Think of an idea, and have an AI create it.</div>
-                </div>
-            </div>
-            <div class="icon-box">
-                <div class="icon"><i class="fal fa-bomb"></i></div>
-                <div class="text">
-                    <div class="title">Super Collider <i class="far fa-arrow-right"></i></div>
-                    <div class="sub-text">Remove mass from any object.</div>
-                </div>
-            </div>
-            <div class="sub-menu-holder"></div>
+            <a href="#">Inicio</a>
         </div>
     </div>
     <div class="menu-item">
         <div class="menu-text">
-            <a href="#">Services</a>
+            <a href="#">Nosotros</a>
         </div>
-        <div class="sub-menu">
-          <div class="icon-box">
-              <div class="icon"><i class="fal fa-wind-turbine"></i></div>
-              <div class="text">
-                  <div class="title">Turbo Editor <i class="far fa-arrow-right"></i></div>
-                  <div class="sub-text">Edit your code while slowing down time .</div>
-              </div>
-          </div>
-          <div class="icon-box">
-              <div class="icon"><i class="fal fa-lightbulb-on"></i></div>
-              <div class="text">
-                  <div class="title">Idea Creator <i class="far fa-arrow-right"></i></div>
-                  <div class="sub-text">Think of an idea, and have an AI create it.</div>
-              </div>
-          </div>
-          <div class="icon-box">
-              <div class="icon"><i class="fal fa-bomb"></i></div>
-              <div class="text">
-                  <div class="title">Super Collider <i class="far fa-arrow-right"></i></div>
-                  <div class="sub-text">Remove mass from any object.</div>
-              </div>
-          </div>
-          <div class="sub-menu-holder"></div>
-      </div>
-            
     </div>
-    
     <div class="menu-item">
         <div class="menu-text">
-            <a href="#">Support</a>
-        </div>
-        
-    </div>
-    
-    <div id="sub-menu-container">
-        <div id="sub-menu-holder">
-            <div id="sub-menu-bottom">
-
-            </div>
+            <a href="#">Comunidad</a>
         </div>
     </div>
-    
 </nav>  
 </header>
 
@@ -202,20 +140,22 @@
 
       <div class="mb-3 mt-3">
         <label for="number" class="titulo_cantidadinvertir">¿Cuánto quéres invertir?</label>
-        <input type="number" id="cantidad" name="cantidad" class="form-control" min="1">
+        <input type="number" id="cantidad" value="10" name="cantidad" class="form-control" min="1">
       </div>
 
       <div class="col-auto">
-        <label class="titulo_elegirtiempo">Elegí tu cripto</label>
+        <label class="titulo_elegirtiempo">¿Por cuánto tiempo?</label>
         <select class="form-select"  id="plazo">
           <option value="1">1 año</option>
           <option value="2">2 años</option>
           <option value="3">3 años</option>
+          <option value="4">4 años</option>
+          <option value="5">5 años</option>
         </select>
       </div>
 
 
-      <button type="button" onclick="calcular()" class="btn-hover color-7">Calcular</button>
+      <button type="button" onclick="calcular()"  class="btn-hover color-7">Calcular</button>
     </form>
 </div>
 <div class="calculadora">
@@ -226,7 +166,7 @@
         <div class="resultados_calculadora">
             <div class="ganarias_resultado">
                 <div class="titulo_ganarias">Ganarías:</div>
-                <div class="resultado_ganarias" id="ganarias"></div>
+                <div class="resultado_ganarias"  id="ganarias"></div>
             </div>
             
             <div class="rendimiento_resultado">
@@ -238,12 +178,13 @@
 </div>
 </div>
 
+<div>
+    .
+</div>
 
 <footer>
     
-<div class="signupFrm">
-   <h3>asdsadas</h3>
-</div>
+
 
 </footer>
 
