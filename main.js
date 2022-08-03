@@ -24,6 +24,7 @@ function getInfoCripto(){
     plazo : plazo
   }
 
+
   return Cripto_OK;
 } 
 
@@ -47,15 +48,36 @@ function cambiar_text_apy(cripto){
   document.getElementById("APY").innerHTML = `${cripto}%`
 }
 
+
+function datosSession(){
+  let name = document.getElementById("cripto_elegida").value;
+  let cantidad = document.getElementById("cantidad").value;
+  let plazo = document.getElementById("plazo").value;
+
+  const Cripto={
+    name : name, 
+    cantidad : cantidad, 
+    plazo : plazo
+  }
+
+  
+  return sessionStorage.setItem('data', JSON.stringify(Cripto));
+}
+
+
+
 function calcular(){
   let cripto_info = getInfoCripto();
   let cripto_encontrada =  buscarAPY(cripto_info);
   let cuenta = valor_aproximado(cripto_encontrada, cripto_info.cantidad, cripto_info.plazo);
   cambiar_text_ganancias(cuenta, cripto_encontrada.value);
   cambiar_text_apy(cripto_encontrada.APY)
-  return cuenta; //a
+  datosSession();
+  return cuenta; 
 }
 
 
-/* aaaaaaaaa */
+
+
+
 
