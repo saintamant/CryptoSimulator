@@ -339,4 +339,173 @@ body {
 
   /* aaaaaaaaaaaaaaaaa */
 
+  /* FOOTER */
+
+.footer hr{
+  margin-top: 100px;
+	width: 70%;
+	margin-left: 15%;
+  color:  wheat;
+}
+
+.footer .footer_div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 25px;
+	width: 70%;
+	margin-left: 15%;
+	padding: 1%;
+	height: 150px;
+	margin-top: 50px;
+  color:  wheat;
+}
+
+.footer .footer_div .City{
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer .footer_div .center_div_city{
+	text-align:left;
+}
+
+.footer .footer_div .adress_main{
+	font-weight: bold;
+}
+
+.footer .footer_div .iconos_redes{
+	display: flex;
+	justify-content: end;
+	gap: 45px;
+}
+
+.footer .footer_div .iconos_redes a{
+	text-decoration: none;
+	color: wheat;
+}
+
+.footer .footer_div .copyright{
+	font-size: small;
+	display: flex;
+	justify-content: end;
+	margin-top: 15px;
+}
+
+.tabla-css {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 600px;
+  box-shadow: 0 0 15px white; 
+  border-collapse: collapse;
+  color: white;
   
+}
+.tabla-css thead tr {
+  background-color: white;
+  color:#252a34;
+  text-align: center;
+}
+.tabla-css th,
+.tabla-css td {
+  padding: 20px 20px;
+  text-align: center;
+}
+.tabla-css tbody tr:nth-of-type(even){
+background-color: #f8c7282c;   
+}
+
+
+
+
+.bloque_map {
+  margin-top: 70px;
+	width: 70%;
+	margin-left: 15%;
+	padding: 1%;
+	height: 650px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+  
+  
+}
+
+.bloque_map .title_offices h2 {
+	color: white;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+
+.bloque_map .mapa_y_lugares {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bloque_map .map_img {
+	width: 30%;
+	height: 500px;
+	border-radius: 5px;
+}
+
+.bloque_map .map_img img {
+	height: 500px;
+	padding: 10px;
+
+}
+
+
+.bloque_map .city_hour {
+	width: 60%;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.bloque_map .delaware {
+	display: flex;
+
+}
+
+
+.bloque_map .img_adress {
+	width: 30%;
+	margin-left: 40px;
+	color: white;
+	text-align: center;
+}
+
+.bloque_map .city_hour .delaware .img_adress .img_delaware img {
+	height: 150px;
+	width: 150px;
+	border-radius: 80px;
+	border: solid white;
+	border-width: 0.3cm;
+}
+
+.bloque_map .delaware .live_hour_place {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	margin-top: 60px;
+	color: white;
+}
+
+.bloque_map .delaware .live_hour_place .place {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.bloque_map .delaware .live_hour_place .hour {
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+/* TERMINA BLOQUE MAP */
